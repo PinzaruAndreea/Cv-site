@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myProjects</title>
+    <link rel="shortcut icon" href="../images/site-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<header class="main-header">
+    <div>
+        <button class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+        </button>
+        <a href="../index.html" class="main-header__brand">
+            <img src="../images/header-icon.png" alt="myProjects- created by Pinzaru Andreea">
+        </a>
+    </div>
+    <nav class="main-nav">
+        <ul class="main-nav__items">
+            <li class="main-nav__item">
+                <a href="../Python/index.html">Python</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="../CSS/index.html">CSS</a>
+            </li>
+            <li class="main-nav__item">
+                <a href="index.html">JavaScript</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<nav class="mobile-nav">
+    <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+            <a href="../Python/index.html">Python</a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="../CSS/index.html">CSS</a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="index.html">JavaScript</a>
+        </li>
+        <li class="mobile-nav__item">
+            <a href="../index.html"> Home</a>
+        </li>
+    </ul>
+</nav>
+<div class="background"></div>
+<div class="backdrop"></div>
+<body>
+
+    <div class="project-box">
+
+            <div class="project-img">
+                <div class="previous" onclick="plusSlides(-1)">
+                    &#10094;
+                </div>
+                <div class="frame">
+                    <img src="../images/macbook.png" alt="">
+                </div>
+                    <div class="prj-el active">
+                        <img src="../images/project1_js.png">
+                    </div>
+                    <div class="prj-el">
+                        <img src="../images/project2_js.png">
+                    </div>
+                    <div class="prj-el">
+                        <img src="../images/project3_js.png">
+                    </div>
+                    <div class="prj-el">
+                        <img src="../images/project4_js.png">
+
+                    </div>
+                    <div class="prj-el">
+                        <img src="../images/project5_js.png">
+                    </div>
+                    <div class="next" onclick="plusSlides(1)">
+                        &#10095;
+                    </div>
+
+
+
+
+            </div>
+        <div class="info">
+            <div class="info-prj active">
+                <h1>My first Project- a Quiz</h1>
+                <p>I loved doing this project. Firstly, I had to do all the CSS work. The course instructor used bootstrap, but, since I had just taken the CSS course, I wanted to practice my newly aquired skills. I tried to stay as authentic to the piece as possible.</p>
+                <p>In my JS file, as explained in the CV on the homepage, I defined a few constants and one local -let- variable. I added an even listener on the submit button that calculated how many of the answers chosen by the user match the constant correctAnswers. I used a forEach() to go through all of them and add them to the let scores which will update with the score.</p>
+                <p>I added a retry button for the script to refresh and be able to do the quiz again.</p>
+                <div class="icon">
+                    <div>
+                        <a href="https://pinziquiz.herokuapp.com/">
+                            <img src="../images/heroku.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/PinzaruAndreea/Quiz">
+                            <img src="../images/github-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-prj"  id="prj2">
+                <h1>Second project: To do List</h1>
+                <p>This one was a little bit more complicated, to say the least. At the beginning, I did the CSS work with the same idea in mind as on the previous project, the issue with the functionality of this one was that when I would refresh the page, everything that I previously input, would delete itself.
+                This got me thinking, I realized that this was not actually linked to some sort of database to store everything that I add there. In response to that, I had implemented firestore (Google Firebase) in my project by initializing the firebaseConfig variable and storing the firestore in the db constant.
+                Next, I stored an arrow function in the addItem constant that will add a new li item into the list after you submit it in the add a new to do box (I later added a submit event for the change to take place on the page)
+                Then comes the deleteItem constant that checks to delete the item with the same attribute ("data-id") as the one you press.(Again, an event listener to check if the delete button is pressed.
+                There's also a filter arrow function and search event listener ("keyup") that filters out all the combination of letters that does not match what it is typed in there and displays only what matches. Lastly, there's an option to unsubscribe onSnapshot that listens for the changes and, if you press the button, you will no longer store anything in the firebase. </p>
+                <div class="icon">
+                    <div>
+                        <a href="https://todolistpinzi.herokuapp.com/">
+                            <img src="../images/heroku.svg" alt="">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/PinzaruAndreea/TodoList">
+                            <img src="../images/github-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info-prj"  id="prj3">
+                <h1>Third project: Weather app</h1>
+                <p>For this project I had to create two JS files to keep the script as clean as possible. One was a reference to the accuWeather API and the other was for the entire functionality of the application. In the forecast.js I created a class with a constructor referencing the key, the weather URI and the city URI. After that I created three asynchronous functions to retrieve all the weather data from a city that will be later submitted by the user. </p>
+                <p>The app.js file contains arrow functions that will return the requested weather information once the promise has been fulfilled (so the data was fetched).
+                For styling purposes, I also added a few svg files, out of which only those that match the weather conditions and time (day/night) will be displayed.</p>
+                <div class="icon">
+                <div>
+                    <a href="https://github.com/PinzaruAndreea/WeatherApp">
+                        <img src="../images/github-logo.svg" alt="">
+                    </a>
+                </div>
+                </div>
+            </div>
+            <div class="info-prj"  id="prj4">
+                <h1>Fourth project: Live Chat</h1>
+                <p>In this one I split the script in three files for a cleaner outlook: sandbox.js, ui.js, app.js. In the sandbox file I defined a class called Chatroom with a constructor that specifies that the room and username are the same as the one chosen by the user. I also retrieved the chats from the firebase. Then I wrote an asynchronous function with three constants: one to display the time the message was sent, one for the chats (that is created under a specific criteria -message, username, room and timestamp) and another response constant that waits for a promise, in this case, it is for all future chats that will be input. The getChats() looks for messages from the database for the chosen room and retrieves the requested data. There are also updateName and updateRoom functions that change the username and the room.
+                For ui.js I created another class ChatUI that actually adds all the data on the page. The last file is for functionality, I created a few event listeners so that the previous functions can be called back and put to good use. :)</p>
+                <div class="icon">
+                    <div>
+                        <a href="https://github.com/PinzaruAndreea/LiveChat">
+                            <img src="../images/github-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="info-prj"  id="prj5">
+                <h1>Fifth project: UI library</h1>
+                <p>This was a more simple project to implement in JS. The complicated part came with the addition of webpack and babel to the project. In a nutshell, they take all the js files that are in a directory and bundles them in a more "primitive" JS outlook to make the files responsive to different web browsers. I created 4 js files to define the cool tools that were made in this project. Then I initialized them all in the index.js file. The script mentioned in the index.html file, however, is the bundle.js file (which contains all the bundled js code made through the webpack boilerplate, which was both webpack and babel.</p>
+                <p>As far as what these items do, I first made a tooltip, which displays a message once you hover over the item. The dropdown is, I believe pretty self explanatory, once you click on the "\/" an active class is added to the content and the information is displayed and, if you click again, the class is removed. For the tabs I did about the same thing, but I asked the script to look for the attribute ("data-target") that the user clicks on and display the content. And lastly, for the snackbar, I used a setTimeout arrow function that will display the bar for 5000ms and then remove it from the body.</p>
+                <div class="icon">
+                    <div>
+                        <a href="https://github.com/PinzaruAndreea/LibraryUI">
+                            <img src="../images/github-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="../shared.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

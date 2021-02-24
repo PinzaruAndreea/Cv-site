@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+.background {
+    background: url("../images/CSS_background.jpg") center/cover;
+    -webkit-filter: grayscale(20%);
+            filter: grayscale(20%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.css_container{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.video_container{
+    width:50%;
+    margin-top: 5rem;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    -webkit-box-shadow: -56px 10px 89px 3px rgba(0,0,0,0.6);
+    -moz-box-shadow: -56px 10px 89px 3px rgba(0,0,0,0.6);
+    box-shadow: -56px 10px 89px 3px rgba(0,0,0,0.6);
+}
+
+
+
+.project_info.type{
+    background-color: #A8D0E6;
+    border-radius: 25px;
+    margin: 3rem;
+}
+
+.project_info h1{
+    color: black;
+    background: #A8D0E6;
+    margin: 0 29rem;
+    border-radius: 25px;
+}
+
+.project_info p{
+    color: black;
+    font: bold 1.3rem "Montserrat",sans-serif;
+    padding: 0 6rem;
+    line-height: 1;
+}
+
+.download_link img{
+    height:10vh;
+    margin-top:1rem;
+}
+
+.site-link {
+    animation: upanddown 2s 3s 5;
+
+}
+
+.site-link a{
+    text-decoration: none;
+    font: bold 2rem "Montserrat",sans-serif;
+    color: #24305e;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1px;
+}
+
+@keyframes upanddown {
+    0% {transform: translateY(0px);}
+    15% {transform: translateY(10px);}
+    25%{transform: translateY(20px);}
+    50%{transform: translateY(30px);}
+    75%{transform: translateY(0px);}
+
+    }
+
+
+@media (max-width:51rem) and (max-height: 51rem) {
+
+    .video_container{
+        width:100vw;
+        margin-top: 5rem;
+        border: none;
+        -webkit-box-shadow: -78px -47px 59px 0px rgba(102,102,102,0.44);
+        -moz-box-shadow: -78px -47px 59px 0px rgba(102,102,102,0.44);
+        box-shadow: -78px -47px 59px 0px rgba(102,102,102,0.44);
+
+    }
+
+
+
+    .project_info h1{
+        margin: 0;
+    }
+
+    .site-link {
+        font: 1.2rem "Montserrat", sans-serif;
+
+    }
+
+    .project_info p{
+        padding: 1rem 0;
+    }
+
+    .project_info.type{
+        margin: 1.5rem 0;
+        border-radius: unset;
+    }
+
+}
+
+@media (min-width: 40rem) and (max-width: 86rem)  {
+    .video_container{
+        width:95vw;
+    }
+
+    .project_info h1{
+        margin: 0;
+    }
+}
