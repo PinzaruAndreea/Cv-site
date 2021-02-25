@@ -4,6 +4,10 @@ const app = express();
 //set port
 const port = process.env.PORT || 8080
 
+server.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}/`);
+});
+
 app.use(express.static(__dirname));
 
 //routes
