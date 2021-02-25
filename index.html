@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myProjects</title>
+    <link rel="shortcut icon" href="images/site-icon.png">
+    <script src="https://kit.fontawesome.com/5260179a0a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+    <div class="backdrop"></div>
+    <header class="main-header">
+        <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
+            <a href="index.html" class="main-header__brand">
+                <img src="images/header-icon.png" alt="myProjects- created by Pinzaru Andreea">
+            </a>
+        </div>
+        <div>
+            <ul class="main-nav__items">
+                <li class="main-nav__item">
+                    <a href="Python/index.html">Python</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="CSS/index.html">CSS</a>
+                </li>
+                <li class="main-nav__item">
+                    <a href="JavaScript/index.html">JavaScript</a>
+				</li>
+            </ul>
+        </div>
+    </header>
+	    <div class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="Python/index.html">Python</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="CSS/index.html">CSS</a>
+            </li>
+            <li class="mobile-nav__item">
+                    <a href="JavaScript/index.html">JavaScript</a>
+				</li>
+            <li class="mobile-nav__item active" >
+                <a href="index.html"> Home</a>
+            </li>
+        </ul>
+    </div>
+    
+    <body>
+	<div class="homepage">
+            <h1 class= "title">Welcome to my webpage!</h1>
+            <div class= "home-page_intro">
+                <h1> Hello, my name is Andreea </h1> 
+		        <p>I'm an aspiring web developer, who started taking online courses on different programing languages(Python, CSS, JS)</p>
+		        <p>This was done all by myself with the help of the dear Internet </p>
+				<p>On this website, you can find several of the projects that I've already done in the aforementioned programing languages </p>
+				<p>I hope you will enjoy it! </p>
+
+            </div>
+        <div class="cv">
+            <div class="exit">
+                <span>X</span></div>
+            <div class="cv-header">
+                <h1>P&#238;nzaru Andreea</h1>
+                <h2>Junior Web Developer</h2>
+                <h3>22 years old - Cluj-Napoca</h3>
+            </div>
+            <div class="cv-info contact">
+                <h1>Contact me</h1>
+                <p>Email:</p> <span>panzaru_andreea@yahoo.com</span>
+                <p>Tel:</p> <span>0759 026 311</span>
+            </div>
+            <div class="cv-info">
+                <h1>About me</h1>
+                <p>Self-taught web developer with a good grip on a few programming languages, such as: HTML, CSS, JavaScript, Python. With the help of a few online Udemy courses, I managed to create a few fun websites I hope you will enjoy too.</p>
+                <p>Python was my starting point, I wanted to learn and understand the core logic behind programming languages. After a few months of learning the basics (and doing a few Python projects), I started a course in CSS HTML and a little bit of JS, where I created a hosting website from scratch. Lastly, in JS I created a total of 5 projects: a quiz, a to do list, a weather application website, a live chat and an UI Library. The course used Bootstrap for the styling of the application and, while I wanted to stay true to the design of the page in the project, I recreated an authentic design with the help of CSS instead.</p>
+                <p>The first project proved to be quite simple to implement. For the beginning, I created a few "const" and one "let". The first constant "correctAnswers" is an array that will be later used in a forEach() method to check that the value the user inputs matches that array. Overall, I created a click event, which prompts a div to pop up with the score (let) of the user. As an extra, I added the refresh button for the form next to the submit button, so that the user can refresh the page and start all over again with the quiz.  </p>
+                <p>The second project was, in my opinion, rudimentary at first. The course had prompted me to create a to do list with HTML and CSS, with the added functionality of a few JS functions. The user could add a new to do item, delete a current item from the list and search the current list. The problem with this was that, when the user refreshed the page, all the data that was previously added, would be erased. Later, I learned how to link a site through JS code into a database, so, of course, I added the feature to this project too.</p>
+                <p>My third project was a little bit more complicated. This is when I first started using asynchronous JS to fetch data from a weather API (accuWeather). I created two scripts files: one where I defined classes with asynchronous JS to get the weather forecast and another for the application of the script. In the forecast.js file I first defined the class constructor which creates an environment for the future functions (updateCity(), getCity() and getWeather()). In the app.js file I put a constant in an arrow function to get the city name and the weather forecast. For design purposes, I added the day/night time icon depending on the current hour in that specific city.</p>
+                <p>In my fourth project I created a live chat with four different rooms, in each, having the possibility to write a message and update username. I also added the DateFns() for the messages to be sorted by time and for that to be displayed on the screen. </p>
+                <p>Lastly, the UI Library taught me how to create functional tools on a webpage with quite a sleek design. I learned how to create a tooltip, a dropdown, multiple tabs and a snackbar. This will certainly prove to be useful in creating cool websites.</p>
+            </div>
+            <div class="cv-info">
+                <h1>Professional experience</h1>
+                <p> August 2019 - present </p> <span>Customer Service Representative -Yardi</span>
+                <p>August 2020 -Python </p> <span>These are just three of the projects I created throughout my learning in Python. The first one is a bot that takes your coffee shop order depending on what information you provide in the terminal. I believe this was the most fun to make out of all, due to its functionality. The next project was easy to implement. I defined two lists, one for the letters (string) and one for points(integers). Next I zipped the letters and points, creating a dictionary. Now, when a player inputs words, the function will return the total points a user makes. The last one was a cool battleship project where a player has to guess in which column + row the boat is located. The user has three tries. </span>
+                <div class="link-flex">
+                    <a href="https://github.com/PinzaruAndreea/Coffee-shop-bot"> Coffee shop Bot</a>
+                    <a href="https://github.com/PinzaruAndreea/Scrabble-python"> Scrabble exercise</a>
+                    <a href="https://github.com/PinzaruAndreea/Battleship-project">Battleship project</a>
+                </div>
+                <p>September-October 2020</p> <span>This is where my journey with web development started, I thoroughly learned the basics of CSS and HTML, later on changing a good portion of my site altogether, by adding flexbox and css to it. </span>
+                <div class="link-flex">
+                    <a href="https://github.com/PinzaruAndreea/Hosting-Site"> Github:Hosting Site</a>
+                    <a href="https://hosting-site-pinzi.herokuapp.com/index.html">Heroku:Hosting site</a>
+                    </div>
+                <p>With the addition of the current site you're accessing</p>
+                <p>November 2020-January 2021</p>
+                <div class="link-flex">
+                    <div class="flex-live">
+                        <a href="https://github.com/PinzaruAndreea/Quiz">Github:Quiz</a>
+                        <a href="https://pinziquiz.herokuapp.com/">Heroku:Quiz</a>
+                    </div>
+                    <div class="flex-live">
+                        <a href="https://github.com/PinzaruAndreea/TodoList">Github:To do List</a>
+                        <a href="https://todolistpinzi.herokuapp.com/">Heroku:To do list</a>
+                    </div>
+                    <a href="https://github.com/PinzaruAndreea/WeatherApp">GitHub:Weather.app</a>
+                    <a href="https://github.com/PinzaruAndreea/LiveChat">GitHub:Live chat</a>
+                    <a href="https://github.com/PinzaruAndreea/LibraryUI">GitHub:UI Library</a>
+                </div>
+            </div>
+
+
+        </div>
+                <div class="cv-wrapper">
+                    <p> My CV can be accessed here:</p>
+                    <img src= "images/CV_icon.svg" alt = "CV Andreea">
+
+                </div>
+            <div class= "home-page_intro" id="contact">
+                <h1>Contact me:</h1>
+                <div class="contact1">
+                    <a href= "mailto:pinzaru_andreea98@gmail.com?subject=subject&cc=cc@example.com">
+                        <img src ="images/gmail.svg" alt = "pinzaru_andreea98@gmail.com">
+                    </a>
+                    <a href= "https://www.linkedin.com/in/andreea-alexandra-pinzaru-88b52a206/">
+                        <img src ="images/linkedin.svg" alt = "Linkedin">
+                    </a>
+                    <a href= "https://www.instagram.com/pnz.u/">
+                        <img src ="images/instagram.svg" alt = "Instagram">
+                    </a>
+                    <a href= "https://github.com/PinzaruAndreea?tab=repositories">
+                        <img src ="images/github-logo.svg" alt = "GitHub">
+                    </a>
+                </div>
+            </div>
+        <div class="home-page_intro">
+            <h1> Certificates </h1>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div style="transform: rotateZ(15deg) translateX(-10px)" class="square"></div>
+            <div style ="transform: translate(-40px, 10px) rotate(20deg)" class="square"></div>
+            <div style="transform: translate(-70px, 10px) rotate(20deg)"class="square"></div>
+            <div class="img-cert">
+                <img src="images/Python_certificate.jpg">
+            </div>
+            <div style="transform:translate(-70px,30px) rotateZ(-15deg)" class="square"></div>
+            <div style="transform:translate(-20px, 30px) rotate(-50deg)" class="square" ></div>
+            <div style="transform:translate(30px, 5px) rotate(-50deg)" class="square" ></div>
+            <div class="img-cert css">
+                <img src="images/CSS_certificate.jpg">
+            </div>
+            <div class="square"></div>
+            <div style ="transform:translateX(-20px) rotate(20deg)" class="square"></div>
+            <div style="transform: translateX(-50px) rotate(25deg)"class="square"></div>
+            <div class="img-cert">
+                <img src="images/JavaScript_certificate.jpg">
+            </div>
+            <div style="transform:translate(-15px, 10px) rotate(-30deg)" class="square" ></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="end">
+                <h1>TO BE CONTINUED...</h1>
+                <p>React - The Complete Guide (incl Hooks, React Router, Redux)</p>
+            </div>
+
+        </div>
+
+    </div>
+        <script src="shared.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+		</html>
