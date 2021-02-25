@@ -10,7 +10,7 @@
   },
   "author": "Pinzaru Andreea",
   "licene": "ISC",
-  "main": "main.js",
+  "main": "server.js",
   "devDependencies": {},
   "license": "ISC",
   "description": ""
