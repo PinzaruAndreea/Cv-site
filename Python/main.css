@@ -1,0 +1,77 @@
+.background {
+    background: url("../images/Python_background.jpg") center/cover;
+    -webkit-filter: grayscale(60%);
+            filter: grayscale(60%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+.video_container {
+    width: 75%;
+    height:50%;
+    margin-top: 1rem;
+}
+
+.projects__info {
+    display: flex;
+    align-items: center;
+}
+
+.project_info {
+    text-align: center;
+    padding: 0.9rem;
+    font: bold 1.2rem "Monteserrat", sans-serif ;
+}
+
+.project_info h1 {
+    font: 2rem "Anton", sans-serif;
+    color: white;
+    background: #A8D0E6;
+    border-radius:25px;
+}
+
+.projects__info > .head{
+    margin-top: 5rem;
+    padding-bottom: 0;
+}
+
+.inverted{
+    order:-1;
+}
+
+.python-links a{
+    text-decoration: none;
+    color: #1e90ff;
+    background-color: aliceblue;
+    padding:0.5rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+
+@media (max-width:51rem) and (max-height: 51rem) {
+    .projects__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .video_container {
+        width: 100%;
+        height:100%;
+        margin-top: 0;
+    }
+    .project_info h1 {
+        font: 1rem "Anton", sans-serif;
+        color: white;
+        background: #A8D0E6;
+        border-radius:10px;
+    }
+
+    .inverted{
+        order:1;
+    }
+}
+
